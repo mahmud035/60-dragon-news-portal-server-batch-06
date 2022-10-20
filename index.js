@@ -30,6 +30,11 @@ app.get('/category/:id', (req, res) => {
   }
 });
 
+/* This is a route that is used to get all the news items. */
+app.get('/news', (req, res) => {
+  res.send(news);
+});
+
 /* This is a route that is used to get a single news item. */
 app.get('/news/:id', (req, res) => {
   const id = req.params.id;
